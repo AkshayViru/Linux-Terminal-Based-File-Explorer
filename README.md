@@ -49,7 +49,7 @@ The last line of the display screen is to be used as status bar - to be used in 
 
 - When enter is pressed
   - Directory​ - It will clear the screen and Navigate into the directory and shows the files & directories inside it as specified in point 1
-  - Files​ - It will open file in vim.
+  - Files​ - It will open the file in vi editor.
   
 1.3 **Traversal**
 - Go back - Left arrow key takes the user to the previously visited directory.
