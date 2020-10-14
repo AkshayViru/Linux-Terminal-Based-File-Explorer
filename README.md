@@ -30,7 +30,7 @@ The last line of the display screen is to be used as status bar - to be used in 
 
 ### 1. Normal Mode:
 
-1.1 **Read and display list of files and directories in the current folder**
+**1.1 Read and display list of files and directories in the current folder**
 
 - File explorer shows each file/directory in the current directory (one entry per line). The following attributes are visible for each file (similar to what gets displayed on ls -l)
 
@@ -45,13 +45,13 @@ The last line of the display screen is to be used as status bar - to be used in 
 
 ![](images/normal_mode.png)
 
-1.2 **Open files & directories**
+**1.2 Open files & directories**
 
 - When enter is pressed
   - Directory​ - It will clear the screen and Navigate into the directory and shows the files & directories inside it as specified in point 1
   - Files​ - It will open the file in vi editor.
   
-1.3 **Traversal**
+**1.3 Traversal**
 - Go back - Left arrow key takes the user to the previously visited directory.
 - Go forward - Right arrow key takes the user to the next directory.
 - Up one level - Backspace key takes the user up one level
@@ -65,6 +65,7 @@ is pressed.
 Upon entering the command mode the user can enter different commands. All commands entered by the user appears at the bottom of the terminal.
 
 ![](images/cmd_mode.png)
+
 **2.1 copy, move and rename**
 
 ```
