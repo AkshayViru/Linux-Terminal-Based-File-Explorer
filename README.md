@@ -127,8 +127,9 @@ goto ~
 ```
 search <file_name> or search <directory_name>
 ```
-
+```
 Eg:
 search foo.txt
+```
 
 **2.6 On pressing ‘ESC’ key the application will go to Normal Mode**
