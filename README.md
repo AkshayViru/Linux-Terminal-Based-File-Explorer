@@ -19,12 +19,12 @@
 2. Open the explorer in any directory:
    - `./main directory_path`
 
-### Functionality Terminal File Explorer
+### Functionality 
 
-File explorer can work in two modes, normal mode and command mode.
+The file explorer can work in two modes, normal mode and command mode.
 The application starts in normal mode, which is the default mode and used to explore the current directory and navigate around in the filesystem.
 <br/>
-The root of the application is the directory where the application started.
+The root/home of the application is the directory where the application started.
 <br/>
 The last line of the display screen is to be used as status bar - to be used in normal and command modes.
 
@@ -32,32 +32,37 @@ The last line of the display screen is to be used as status bar - to be used in 
 
 1.1 **Read and display list of files and directories in the current folder**
 
-- File explorer shows each file/directory in the current directory (one entry per line). The following attributes are visible for each file (similar to what gets displayed ls -l)
+- File explorer shows each file/directory in the current directory (one entry per line). The following attributes are visible for each file (similar to what gets displayed on ls -l)
 
   - File/Directory Name
   - Ownership (User & Group) & Permissions
   - File/Directory size
   - Last modified
 
-- The File explorer also handle scrolling using 'k' and 'l' keys in case the directory has a lot of files. Press 'l' to view the next set of files and 'k' to view the previous set of file.
+- The File explorer also handle scrolling using 'k' and 'l' keys in case the directory has a lot of files. Press 'l' to view the next set of files and 'k' to view the previous set of files.
 - The file explorer also show the entries “.” & “..” for current and parent directory respectively.
-- User is able to navigate up & down the file list using corresponding arrow keys.
+- User can navigate up & down the file list using corresponding arrow keys.
 
 ![](images/normal_mode.png)
 
 1.2 **Open files & directories**
 
 - When enter is pressed
-  - Directory​ - It will Clear the screen and Navigate into the directory and shows the files & directories inside it as specified in point 1
+  - Directory​ - It will clear the screen and Navigate into the directory and shows the files & directories inside it as specified in point 1
   - Files​ - It will open file in vim.
+  
+1.3 **Traversal**
+- Go back - Left arrow key takes the user to the previously visited directory.
+- Go forward - Right arrow key takes the user to the next directory.
+- Up one level - Backspace key takes the user up one level
+- Home - ​h​ key takes the user to the home folder 
 
 ### 2. Command Mode:
 
 The application enters the command mode whenever the `:` (colon) key
 is pressed.
 <br/>
-Upon entering the command mode the user should be able to enter
-different commands. All commands entered by the user appears at the bottom of the terminal.
+Upon entering the command mode the user can enter different commands. All commands entered by the user appears at the bottom of the terminal.
 
 ![](images/cmd_mode.png)
 **2.1 copy, move and rename**
@@ -125,4 +130,4 @@ search <file_name> or search <directory_name>
 Eg:
 search foo.txt
 
-**2.7 On pressing ‘ESC’ key the application will go to Normal Mode**
+**2.6 On pressing ‘ESC’ key the application will go to Normal Mode**
